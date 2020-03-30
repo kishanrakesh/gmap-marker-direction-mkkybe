@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { AgmCoreModule } from '@agm/core';
+import { DirectionComponent } from './direction/direction.component';
 
 @NgModule({
   imports:      [
@@ -16,7 +17,7 @@ import { AgmCoreModule } from '@agm/core';
       apiKey: ''
     })
   ],
-  declarations: [ AppComponent, HelloComponent ],
+  declarations: [ AppComponent, HelloComponent, DirectionComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
