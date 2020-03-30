@@ -1,6 +1,6 @@
 <h1>Angular Google Maps (AGM) Demo</h1>
 <p><a href="https://angular-maps.com/" target="_blank">Official Website</a></p>
-<><>
+
 <agm-map 
   [latitude]="lat"
   [longitude]="lng"
@@ -8,8 +8,12 @@
   [disableDefaultUI]="false"
   [zoomControl]="false"
   (mapClick)="mapClicked($event)" (mapReady)="mapReady($event)">
-  
-
+  <!--<agm-marker 
+  [iconUrl]="app/marker.png">
+    
+  </agm-marker>-->
 </agm-map>
+<app-direction ></app-direction>
+
 
 {{template}}

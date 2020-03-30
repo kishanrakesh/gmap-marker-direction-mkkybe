@@ -17,7 +17,8 @@ export class AppComponent  {
   radius=50;
 
   //CODE
-  myIcon="./direction/direction.component.svg";
+ //myIcon='./direction/direction.component.svg'
+  angle=90;
 
  
   clickedMarker(label: string, index: number) {
@@ -46,7 +47,8 @@ export class AppComponent  {
                 map: map,
                 title: 'Direction Marker',
                 optimized: false,
-                icon: myIcon
+                icon: { url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg), 
+                scaledSize: new google.maps.Size(20, 20) }
             });
   }
   createTestMarker(map,position){
